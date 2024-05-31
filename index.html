@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./impact.ttf" />
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./img/sprite.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="page-header container">
+            <nav class="navigation">
+             <a href="./index.html" class="logotype">Lloyd<span class="span-logotype">Jefersson.</span></a>
+         </nav>
+         <button type="button" class="open-mobile-menu">
+             <svg class="burger-icon" width="32" height="32">
+                 <use href="./img/sprite.svg#icon-toggle-btn-light"></use>
+             </svg>
+         </button>
+        </div>
+        <div class="mobile-menu">
+                <a href="" class="logotype logo-mob-menu">Lloyd<span class="span-logotype">Jefersson.</span></a>
+                <button class="close-btn-menu">
+                    <svg class="cls-menu-icon" width="32" height="32">
+                        <use href=""></use>
+                    </svg>
+                </button>
+                <div class="container-menu">
+                    <ul class="mob-menu-list">
+                        <li>
+                            <a href="" class="mob-menu-link">About me</a>
+                        </li>
+                        <li>
+                            <a href="" class="mob-menu-link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="" class="mob-menu-link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </header>
+    <script type="module" src="./js/header-mobile.js"></script>
+</body>
+</html>
