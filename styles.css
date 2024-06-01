@@ -1,10 +1,10 @@
-/* :root {
+:root {
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
 
-    color: #242424;
+    /* color: #242424; */
     background-color: rgba(255, 255, 255, 0.87);
 
     font-synthesis: none;
@@ -12,7 +12,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-} */
+}
 
 
 
@@ -56,13 +56,9 @@ img {
     height: auto;
 }
 
-@media screen and (min-width: 768px) {
-    
-}
 
-@media screen and (min-width: 1280px) {
-    
-}
+
+
 
 .open-mobile-menu {
     display: flex;
@@ -107,11 +103,11 @@ img {
         line-height: 100%;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: var(--white);
+        color: #F0F0F0;
 }
 
 .span-logotype {
-    color: #F0F0F0;
+    color: #14C57C;
 }
 
 
@@ -180,17 +176,28 @@ img {
 .mob-menu-list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 24px;
+    align-items: center;
 }
 
-.mob-menu-link {}
+.mob-menu-link {
+    font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px; 
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        color: #f0f0f0;
+}
 
 .menu-item {
    
 }
 
-.menu-link {
-    display: block;
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    .menu-list {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -203,28 +210,43 @@ img {
         display: none;
     }
 
+    .logotype {
+        margin-right: 216px;
+    }
+
     .navigation {
-        justify-content: space-between;
+        
     }
 
     .menu-list {
         display: flex;
-        justify-content: end;
+        gap: 40px;
     }
-}
 
-@media screen and (min-width: 360px) and (max-width: 767px) {
     .menu-item {
-        display: none;
-    }
-}
+        font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px; 
+            line-height: 1.5;
+            letter-spacing: 0.03em;
+            
 
+        }
+        .menu-link {
+            color: #F0F0F0;
+        }
+    }
 
 
 @media screen and (min-width: 1280px) {
     .container {
         max-width: 1280px;
         padding: 0 136px;
+    }
+
+    .logotype {
+        margin-right: 520px;
     }
 }
 
